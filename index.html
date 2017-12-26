@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="myblog">
-<meta property="og:url" content="https://weihaonan.github.io/Myblog/index.html">
+<meta property="og:url" content="https://weihaonan.github.io/index.html">
 <meta property="og:site_name" content="myblog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="myblog">
@@ -53,7 +53,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://weihaonan.github.io/Myblog"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://weihaonan.github.io"></form>
       </div>
     </div>
   </div>
@@ -84,12 +84,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>摘要：<br>    <div style="padding-left: 10px;">练习如何在github上创建博客</div></p>
-<p>准备工作：<br>    <div style="padding-left: 10px;">安装git和node.js</div><br>    <div style="padding-left: 10px;">百度搜索git node.js直接下载安装即可</div><br>正文：<br>    </p><h3>申请github账户，创建github仓库</h3><br>    <ul><br>        <li>登陆github，点New repository创建一个新的仓库，命名为：{username}.github.com（这里的{username}为你在github上的用户名,尽量保持一致，这样服务器才能找得到）</li><br>        <li>进入这个名为{username}.github.com的仓库，点击右边的 Settings 进入仓库管理中心；选择options<br>        </li><br>        <li>在options中找到GitHub Pages，里边列出了你发布的博客所在的域名，一般为<a href="http://{username}.github.io/,以后就可以通过这个域名访问你的博客" target="_blank" rel="noopener">http://{username}.github.io/,以后就可以通过这个域名访问你的博客</a></li><br>    </ul><br>    <h3>安装hexo，hexo是基于node.js</h3><br>    <span>hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</span><br>    <ul><br>        <li>随便创建一个文件夹，进入文件夹，右键选择Git Bash Here</li><br>        <li>在弹出的命令提示符中输入npm install -g hexo-cli</li><br>        <li>npm install hexo –save</li><br>        <li>查看hexo是否安装正确，– hexo -v</li><br>        <li>初始化hexo – hexo init，这时候可能会提示错误： please run <code>hexo init</code> on an empty folder and then copy your files into it；只需将你所在文件夹中的文件删掉，再重新hexo init</li><br>        <li>安装生成器，–npm install</li><br>        <li>在本地运行hexo, –hexo s -g</li><br>        <li>打开浏览器，输入localhost:4000,就可以在本地看到你的个人博客了，按住Ctrl+C键即可停止</li><br>    </ul><p></p>
+<p>准备工作：<br>    <div style="padding-left: 10px;">安装git和node.js</div><br>    <div style="padding-left: 10px;">百度搜索git node.js直接下载安装即可</div></p>
+<p></p><h3>正文</h3>：<br>    <h3>申请github账户，创建github仓库</h3><br>    <ul><br>        <li>登陆github，点New repository创建一个新的仓库，命名为：{username}.github.com（这里的{username}为你在github上的用户名,尽量保持一致，这样服务器才能找得到）</li><br>        <li>进入这个名为{username}.github.com的仓库，点击右边的 Settings 进入仓库管理中心；选择options<br>        </li><br>        <li>在options中找到GitHub Pages，里边列出了你发布的博客所在的域名，一般为<a href="http://{username}.github.io/,以后就可以通过这个域名访问你的博客" target="_blank" rel="noopener">http://{username}.github.io/,以后就可以通过这个域名访问你的博客</a></li><br>    </ul><br>    <h3>安装hexo，hexo是基于node.js</h3><br>    <span>hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</span><br>    <ul><br>        <li>随便创建一个文件夹，进入文件夹，右键选择Git Bash Here</li><br>        <li>在弹出的命令提示符中输入$ npm install -g hexo-cli,全局安装hexo</li><br>        <li>$ npm install hexo –save，在本地安装hexo</li><br>        <li>查看hexo是否安装正确，$ hexo -v</li><br>        <li>初始化hexo $ hexo init，这时候可能会提示错误： please run <code>hexo init</code> on an empty folder and then copy your files into it；只需将你所在文件夹中的文件删掉，再重新hexo init</li><br>        <li>安装生成器，$ npm install</li><br>        <li>在本地运行hexo, $ hexo s -g</li><br>        <li>打开浏览器，输入localhost:4000,就可以在本地看到你的个人博客了，按住Ctrl+C键即可停止</li><br>    </ul><br>    <h3>配置项</h3><br>    <ul><br>        <li>打开根目录下的_config.yml</li><br>        <li>设置deploy，repo设置为 <a href="https://github.com/{username}/{username}.github.io.git" target="_blank" rel="noopener">https://github.com/{username}/{username}.github.io.git</a></li><br>    </ul><p></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weihaonan.github.io/Myblog/2017/12/26/如何在github上创建博客/" data-id="cjbn6knx800000sx6tezaka09" class="article-share-link">Teilen</a>
+      <a data-url="https://weihaonan.github.io/2017/12/26/如何在github上创建博客/" data-id="cjbn6knx800000sx6tezaka09" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -134,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://weihaonan.github.io/Myblog/2017/12/26/hello-world/" data-id="cjbn6knxd00010sx6rt57jsja" class="article-share-link">Teilen</a>
+      <a data-url="https://weihaonan.github.io/2017/12/26/hello-world/" data-id="cjbn6knxd00010sx6rt57jsja" class="article-share-link">Teilen</a>
       
       
     </footer>
