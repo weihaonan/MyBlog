@@ -83,8 +83,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>摘要：<br>    练习如何在github上创建博客<br>正文：<br>    <div>ssss</div></p>
-
+        <p>摘要：<br>    <div>练习如何在github上创建博客</div></p>
+<p>准备工作：<br>    <div>安装git和node.js</div><br>    <div>百度搜索git node.js直接下载安装即可</div><br>正文：<br>    </p><h3>申请github账户，创建github仓库</h3><br>    <ul><br>        <li>登陆github，点New repository创建一个新的仓库，命名为：{username}.github.com（这里的{username}为你在github上的用户名,尽量保持一致，这样服务器才能找得到）</li><br>        <li>进入这个名为{username}.github.com的仓库，点击右边的 Settings 进入仓库管理中心；选择options</li><br>        <li>在管理中心opeions选项中的 GitHub Pages 中可以看到你的博客域名，一般为 <a href="https://{username}.github.io/，以后可以通过这个域名访问你的博客" target="_blank" rel="noopener">https://{username}.github.io/，以后可以通过这个域名访问你的博客</a></li><br>    </ul><p></p>
+<pre><code>&lt;h3&gt;安装hexo，hexo是基于node.js&lt;/h3&gt;
+&lt;span&gt;hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/span&gt;
+&lt;ul&gt;
+    &lt;li&gt;随便创建一个文件夹，进入文件夹，右键选择Git Bash Here&lt;/li&gt;
+    &lt;li&gt;在弹出的命令提示符中输入npm install -g hexo-cli&lt;/li&gt;
+    &lt;li&gt;npm install hexo --save&lt;/li&gt;
+    &lt;li&gt;查看hexo是否安装正确，-- hexo -v&lt;/li&gt;
+    &lt;li&gt;初始化hexo -- hexo init，这时候可能会提示错误： please run `hexo init` on an empty folder and then copy your files into it；只需将你所在文件夹中的文件删掉，再重新hexo init&lt;/li&gt;
+    &lt;li&gt;安装生成器，--npm install&lt;/li&gt;
+    &lt;li&gt;在本地运行hexo, --hexo s -g&lt;/li&gt;
+    &lt;li&gt;打开浏览器，输入localhost:4000,就可以在本地看到你的个人博客了，按住Ctrl+C键即可停止&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
       
     </div>
     <footer class="article-footer">
